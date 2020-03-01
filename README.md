@@ -1,2 +1,1 @@
-# TicTacToeGame
-A Tic Tac Toe game in Javascript :)
+TicTacToe Game
