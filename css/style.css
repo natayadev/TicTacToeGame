@@ -1,5 +1,6 @@
 *, *::after, *::before {
   box-sizing: border-box;
+  color: #FFF;
 }
 
 :root {
@@ -8,7 +9,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px;
+  background: rgb(255,15,128);
+  background: -webkit-linear-gradient(bottom, rgba(255,15,128,1) 20%, rgba(255,17,70,1) 80%);
+  background: -o-linear-gradient(bottom, rgba(255,15,128,1) 20%, rgba(255,17,70,1) 80%);
+  background: linear-gradient(to top, rgba(255,15,128,1) 20%, rgba(255,17,70,1) 80%);
 }
 
 .board {
@@ -25,7 +30,7 @@ body {
 .cell {
   width: var(--cell-size);
   height: var(--cell-size);
-  border: 1px solid black;
+  border: 1px solid #FFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +66,7 @@ body {
 .cell.x::before,
 .cell.x::after,
 .cell.circle::before {
-  background-color: black;
+  background-color: #FFF;
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before,
@@ -130,13 +135,13 @@ body {
 .winning-message button {
   font-size: 3rem;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #FFF;
   padding: .25em .5em;
   cursor: pointer;
 }
 
 .winning-message button:hover {
-  background-color: black;
+  background-color: #FFF;
   color: white;
   border-color: white;
 }
